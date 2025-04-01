@@ -4,33 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- css import -->
+    <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 <body>
 
-    <!-- main box -->
-    <div>
+    <!-- header section -->
+    <header>
         <!-- logo box -->
-        <div>
-            <a href="./">
+        <div class="logo">
+            <a href="#">
                 <img src="" alt="my logo">
             </a>
         </div>
 
         <!-- nav link -->
-        <div>
-            <a href="./">Home</a>
-            <a href="./">About me</a>
-            <a href="./">Contact Us</a>
-        </div>
-        
-        <!-- my video or image -->
-        <div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        </div>
+    <!-- main box -->
+    <div>
+        <main>        
+            <!-- my video or image -->
+            <div class="main-media">
+                <img src="images/my_photo.jpg" alt="my photo">
+            </div>
+        </main>
 
         <!-- my bio area -->
         <div>
+            <div class="my-bio">
+                <h1>Kagiso Mogotsi</h1>
+                
+                <p><strong>My bio</strong> - I'm a backend-focused developer currently working on a Dynamic Demo for Local Network Profile Management. My main stack revolves around PHP (preferably Laravel) for e-commerce, and I’m actively looking to collaborate with UI developers on my private e-commerce clothing store project.
 
+                    I learned Python in 7 months, and you can ask me anything about database configurations. My specialties? Trading Bots (MQL4) and E-commerce (PHP). While I’ve never done frontend coding, I can read and understand it just fine.    
+                </p>
+                <p>Oh, and just for fun:</p>
+                <p>System.out.print("I don't know Java, I barely talk proper"); 😂</p>
+            </div>
+            <div class="media-avi">
+                <img src="images/my_photo.jpg" alt="my photo">
+            </div>
         </div>
     </div>
 
