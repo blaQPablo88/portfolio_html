@@ -9,7 +9,6 @@ body {
     color: #000;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -39,6 +38,41 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #005a53;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
 }
 
 main {
@@ -119,6 +153,15 @@ section div {
     color: #555;
 }
 
+button, a {
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover, button:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -155,4 +198,33 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .media-avi {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .my-bio {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .media-avi img {
+        width: 200px;
+        height: 200px;
+    }
 }
